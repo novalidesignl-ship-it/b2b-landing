@@ -6,6 +6,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="noindex, nofollow" />
       <title>Premium B2B Landing Page</title>
+      <script>
+        (function(){
+          if (sessionStorage.getItem('gate') === 'ok') return;
+          var p = prompt('Password:');
+          if (p === 'cinar') { sessionStorage.setItem('gate','ok'); }
+          else { document.documentElement.innerHTML = ''; window.stop && window.stop(); }
+        })();
+      </script>
       <script type="module" crossorigin src="./assets/index-Bk1Hb1ks.js"></script>
       <link rel="stylesheet" crossorigin href="./assets/index-GsEcHIEE.css">
     </head>
