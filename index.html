@@ -5,6 +5,9 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="noindex, nofollow" />
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
       <title>Premium B2B Landing Page</title>
       <style id="gate-style">html,body{background:#fff!important}#root{display:none!important}</style>
       <script>
@@ -16,7 +19,7 @@
           if (sessionStorage.getItem('gate') === 'ok') { unlock(); return; }
           var p = prompt('Password:');
           if (p === 'cinar') { sessionStorage.setItem('gate','ok'); unlock(); }
-          else { document.documentElement.innerHTML=''; document.documentElement.style.background='#fff'; window.stop&&window.stop(); }
+          else { location.reload(); }
         })();
       </script>
       <script type="module" crossorigin src="./assets/index-Bk1Hb1ks.js"></script>
